@@ -4,12 +4,16 @@
     --cor-secundaria--: #D8C4B6;
     --cor-de-texto--: #F5EFE7;
     --cor-alternativa--:#76ABAE;
+    --cor-destaque--:#161b22;
 }
 
 
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--cor-de-texto--);
+    
 }
 
 .titulo img{
@@ -18,14 +22,15 @@ body{
 }
 
 .section-title{
-    font-family: "Belleza", sans-serif;
+    font-family:"Belleza", sans-serif;
+    font-weight: bold;
 }
 
 .navbar{
     background-color: var(--cor-de-fundo--);
     color: var(--cor-de-texto--);
 }
-.nav .nav-item .nav-link.active{
+.nav .nav-item .nav-link.active, .nav .nav-link.active{
     background-color: var(--cor-alternativa--);
     color: var(--cor-de-fundo--);
 }
@@ -34,6 +39,30 @@ body{
     color: var(--cor-alternativa--);
 }
 .carousel-item img{
-    height: 500px; 
+    height: 700px; 
     width: 700px;
+}
+.text-colored{
+    color: var(--cor-alternativa--);
+}
+
+#sobre-a-urban, #cortes{
+    background-color: var(--cor-destaque--);
+}
+textarea{
+    resize: none;
+}
+.social-links li{
+    list-style: none ;
+    display: inline
+}
+.social-links li a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    .carousel-item img{
+        height: 200px;
+        width: 100px;
+    }
 }

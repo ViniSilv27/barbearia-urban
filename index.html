@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+<body class="bg-dark">
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
             <div class="titulo d-inline-flex align-items-center ">
-                <img src="imagens/logo-sem-fundo.png" alt="logo da loja">
+                <img src="imagens/logo-sem-fundo.png" alt="logo da loja" class="me-2">
                 <h1 class="section-title">Barbearia Urban</h1>
             </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-hamburguer">
@@ -24,22 +24,26 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-hamburguer">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link active" href="#sobre-a-urban">
+                        <a class="nav-link" href="#sobre-a-urban">
+                            <i class="bi bi-house-door me-1"></i>
                             Sobre a Urban
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#pacotes">
+                            <i class="bi bi-collection me-1"></i>
                             Pacotes
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#cortes">
+                            <i class="bi bi-scissors me-1"></i>
                             Cortes
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#contato">
+                            <i class="bi bi-chat-left me-1"></i>
                             contato
                         </a>
                     </li>
@@ -52,7 +56,7 @@
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="d-block w-100" src="imagens/barber-shop-6797761_1280.jpg" alt="slide 0">
+                        <img class="d-block w-100" src="imagens/slide0.jpg" alt="slide 0">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
                         <img class="d-block w-100" src="imagens/slide1.jpg" alt="slide 1">
@@ -61,7 +65,7 @@
                         <img class="d-block w-100" src="imagens/slide2.jpg" alt="slide 2">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img class="d-block w-100" src="imagens/slide3.jpg" alt="slide 3">
+                        <img class="d-block w-100" src="imagens/slidealternativo1.jpg" alt="slide 3">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -84,7 +88,7 @@
                             <img src="imagens/sobre-a-barbearia.png" alt="imagem da barbearia" class="d-block w-100 rounded">
                         </div>
                         <div class="col-md-7">
-                            <h2 class="section-title">Sobre a Urban</h2>
+                            <h2 class="section-title mb-3 mt-3 mt-md-0">Sobre a <span class="text-colored">Urban</span>  </h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum reprehenderit cum id sapiente iure eaque? Nostrum, debitis autem a natus vitae delectus atque amet, consectetur quae quos praesentium consequatur.
                             </p>
@@ -96,11 +100,261 @@
                 </div>
             </div>
         </section>
+        <section id="pacotes">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5 mt-2">Pacotes</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/imagens/pacote-1.jpg" alt="pacote 1" class="d-block w-100">
+                            <h3 class="section-title mb-3 mt-3">
+                                <i class="bi bi-scissors me-1 text-colored fs-5"></i>
+                                Pacote <span class="text-colored">Corte</span></h3>
+                            
+                            
+                            <p>
+                    
+                                Com esse plano, você pode cortar o cabelo quantas vezes quiser, sem precisar se preocupar com o preço.
+                            </p>
+                            <p>
+                                - Corte o cabelo quantas vezes quiser.
+                            </p>
+
+                            <p>
+                                - Desconto no consumo de bebidas.
+                            </p> 
+
+                            <p>
+                                -Descontos especiais em produtos.
+                            </p>   
+
+
+                            
+                            <h5 class="mb-3">R$ 99,99</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/imagens/pacote-2.jpg" alt="pacote 2" class="d-block w-100">
+                            <h3 class="section-title mb-3 mt-3">
+                                <i class="bi bi-scissors me-1 text-colored fs-5"></i>
+                                Pacote <span class="text-colored">Barba</span></h3>
+                            
+                            
+                            <p>
+                    
+                                Aqui você pode fazer a barba quantas vezes quiser, sem se preocupar com o preço.
+                            </p>
+                            <p>
+                                - Corte a barba quantas vezes quiser.
+                            </p>
+
+                            <p>
+                                - Desconto no consumo de bebidas.
+                            </p> 
+
+                            <p>
+                                -Descontos especiais em produtos.
+                            </p> 
+                            <h5>R$ 69,99</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/imagens/slidealternativo0.jpg" alt="pacote 3" class="d-block w-100">
+                            <h3 class="section-title mb-3 mt-3">
+                                <i class="bi bi-scissors me-1 text-colored fs-5"></i>
+                                Pacote <span class="text-colored">Premium</span></h3>
+                        
+                            <p>
+                                Com ele, você pode fazer o corte de cabelo e a barba quantas vezes quiser, com a garantia de um atendimento personalizado e de qualidade.
+                            </p>
+                            <p>
+                                - Corte a barba quantas vezes quiser.
+                            </p>
+                            <p>
+                                - Corte o cabelo quantas vezes quiser.
+                            </p>
+                            <p>
+                                - Desconto no consumo de bebidas.
+                            </p>
+                            <p>
+                                - Descontos especiais em produtos.
+                            </p>
+                            <h5>R$ 150,00</h5>
+                        </div>
+                    </div>
+            </div>
+
+            </div>
+        </section>
+        <section id="cortes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Cortes</h2>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cortes">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#cabelos" class="fw-bold text-start  text-colored nav-link active mb-3">Cabelos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#barba" class="fw-bold text-start  text-colored nav-link mb-3">Barbas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#sombrancelha" class="fw-bold text-start  text-colored nav-link mb-3">Sombrancelhas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#produtos" class="fw-bold text-start  text-colored nav-link">Produtos</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="cabelos">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/imagens/corte-tesoura.jpg" alt="corte-tesoura" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                        <h5 class="section-title">Corte na tesoura</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        <h5>R$ 35,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/corte-maquininha.jpg" alt="corte-maquininha" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                        <h5 class="section-title">Corte na maquininha</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        <h5>R$ 25,00</h5>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="tab-pane" id="barba">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/imagens/barba-corte.jpg" alt="barba corte" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                        <h5 class="section-title">Corte barba</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        <h5>R$ 15,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/barba-desenho.jpg" alt="barba desenho" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                        <h5 class="section-title">Corte barba deseenho</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        <h5>R$ 25,00</h5>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="tab-pane" id="sombrancelha">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/imagens/sombrancelhas.jpg" alt="sombrancelhas" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">sombrancelhas</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 10,00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="produtos">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/imagens/oleo-para-barba.webp" alt="oleo para barba" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">Oleo para barba</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 233,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/beard-balm.webp" alt="beard balm" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">Beard balm</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 199,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/gel-cabelo.webp" alt="gel cabelo" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">Gel de cabelo classsico</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 129,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/shampoo-anticaspa.webp" alt="shampoo anticaspa" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">Shampoo anticaspa</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 135,00</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="/imagens/shampoo-restaurador.webp" alt="shampoo-restaurador" class="d-block w-100 rounded" style="height: 200px; width: 50px;">
+                                            <h5 class="section-title">Shampoo restaurador</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <h5>R$ 155,00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="contato">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center section-title mb-5">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 me-5">
+                        <form>
+                            <div class="d-flex text-colored">
+                                <i class="bi bi-envelope-open-fill fs-5 text-colored me-3"></i>
+                                <h3 class="section-title">Contato</h3>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" id="name" requide class="form-control bg-dark">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email"class="form-label" >Email</label>
+                                <input type="email" id="email" requide class="form-control bg-dark">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">telefone (Opcional)</label>
+                                <input type="tel" id="tel" class="form-control bg-dark">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea name="mensagem" id="mensagem" required class="form-control bg-dark"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-outline-light mb-5">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 ">
+                        <div class="row">
+                            <h3 class="section-title text-colored mb-4">
+                                <i class="bi bi-person-heart"></i>
+                                Redes Socias
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored" ></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-3 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored" ></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored" ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title text-colored mt-4 mb-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua teste Exemplo n° 145 Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
     </div>
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
